@@ -93,21 +93,10 @@ public class MyDBHandler extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        mDBHelper = new MyDBHandler(this);
-
-        try {
-            mDBHelper.updateDataBase();
-        } catch (IOException mIOException) {
-            throw new Error("UnableToUpdateDatabase");
+    public void onCreate(SQLiteDatabase DB) {
+        DB.execSQL("create Table userInfo(userId INT primary key, userName TEXT, passWord TEXT, eMail TEXT)");
         }
 
-        try {
-            mDb = mDBHelper.getWritableDatabase();
-        } catch (SQLException mSQLException) {
-            throw mSQLException;
-        }
-    }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         if (newVersion > oldVersion)
