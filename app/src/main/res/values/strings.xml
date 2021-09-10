@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Sars_And_Stripes</string>
+    <string name="topLogo">Sars &amp; Stripes</string>
+    <string name = "login">Log In</string>
+    <string name = "enterUsernamePrompt">Enter Username:</string>
+    <string name = "enterPasswordPrompt">Enter Password:</string>
+    <string name = "createAccount">Create Account</string>
+    <string name = "userNameText"></string>
+    <string name = "passwordText"></string>
+    <string name = "btnCreateAccount">Create Account</string>
+    <string name = "btnSignIn">Sign In</string>
+    <string name = "teamName">Powered By HotdogsAndBrainWaves</string>
 </resources>
