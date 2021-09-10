@@ -160,11 +160,22 @@
         android:ems="10"
         android:hint="@string/rePasswordHint"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         android:shadowColor="@color/white"
         android:text="@string/passwordText"
-        android:textColorHint="#3BFFFFFF"
 
+        android:textColorHint="#3BFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+    <Button
+        android:id="@+id/btnAcctCreate"
+        android:layout_width="168dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="63dp"
+        android:text="@string/btnCreateAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
