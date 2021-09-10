@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.29791666666666666" />
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/drawable/ic_launcher_background.xml" value="0.29791666666666666" />
-        <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_sign_up.xml" value="0.18784722222222222" />
+        <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_splash_screen.xml" value="0.22301912568306012" />
       </map>
     </option>
   </component>
