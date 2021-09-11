@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnCreate;
+    Button BtnLogin;
 
     LoginDataBaseAdapter loginDataBaseAdapter;
 
@@ -32,7 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        BtnLogin = (Button) findViewById(R.id.BtnLogin);
+        BtnLogin.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
 
+                startActivity(new Intent(MainActivity.this, Home.class));
+
+
+            }
+        });
     }
     public void signIn(View V)
     {
@@ -62,6 +71,15 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(MainActivity.this, "Congrats: Login Successful", Toast.LENGTH_LONG).show();
                     dialog.dismiss();
+                    BtnLogin.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View v) {
+
+                            startActivity(new Intent(MainActivity.this, Home.class));
+
+
+
+                        }
+                    });
                 }
                 else
                 {
