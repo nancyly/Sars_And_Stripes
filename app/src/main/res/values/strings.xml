@@ -25,4 +25,5 @@
     <string name="btnSymptoms"></string>
     <string name="btnLocations"></string>
     <string name="btnBookAppointment"></string>
+    <string name="title_activity_locations">Locations</string>
 </resources>
