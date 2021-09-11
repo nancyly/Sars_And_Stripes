@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     dialog.dismiss();
                     BtnLogin.setOnClickListener(new View.OnClickListener() {
                         public void onClick(View v) {
-
+// >>>> add check password later before submission!!!!!!
                             startActivity(new Intent(MainActivity.this, Home.class));
 
 
