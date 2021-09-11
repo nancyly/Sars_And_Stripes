@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sars_And_Stripes">
         <activity
+            android:name=".Settings"
+            android:exported="true" />
+        <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
+            android:name=".Locations"
+            android:exported="true" />
+        <activity
+            android:name=".Book_Appointment"
+            android:exported="true" />
+        <activity
+            android:name=".Symptoms"
+            android:exported="true" />
+        <activity
+            android:name=".Labs"
+            android:exported="true" />
+        <activity
             android:name=".Home"
             android:exported="true" />
         <activity
