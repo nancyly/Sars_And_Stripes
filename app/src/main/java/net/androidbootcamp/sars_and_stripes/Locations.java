@@ -1,8 +1,7 @@
 package net.androidbootcamp.sars_and_stripes;
 
-import android.os.Bundle;
-
 import androidx.fragment.app.FragmentActivity;
+import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -10,20 +9,19 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
 import net.androidbootcamp.sars_and_stripes.databinding.ActivityLocationsBinding;
 
 public class Locations extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private ActivityLocationsBinding binding;
+private ActivityLocationsBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityLocationsBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+     binding = ActivityLocationsBinding.inflate(getLayoutInflater());
+     setContentView(binding.getRoot());
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
