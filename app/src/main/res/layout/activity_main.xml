@@ -83,7 +83,7 @@
         android:shadowColor="@color/white"
         android:text="@string/userNameText"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColorHint="#54FFFFFF"
         android:textColorLink="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topLogo" />
@@ -98,7 +98,8 @@
         android:ems="10"
         android:hint="Enter Password Here"
         android:inputType="textPassword"
-        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="#54FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userNameText" />
 

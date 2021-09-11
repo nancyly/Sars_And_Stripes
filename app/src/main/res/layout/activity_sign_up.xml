@@ -22,6 +22,7 @@
         android:inputType="text"
         android:shadowColor="@color/white"
         android:text="@string/userNameText"
+        android:textColor="@color/white"
         android:textColorHint="#3BFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblUname"
@@ -41,8 +42,9 @@
         android:minHeight="48dp"
         android:shadowColor="@color/white"
         android:text="@string/emailText"
-        android:textColorHint="#3BFFFFFF"
+        android:textColor="@color/white"
 
+        android:textColorHint="#3BFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textRePassword" />
 
@@ -59,8 +61,9 @@
         android:minHeight="48dp"
         android:shadowColor="@color/white"
         android:text="@string/passwordText"
-        android:textColorHint="#3BFFFFFF"
+        android:textColor="@color/white"
 
+        android:textColorHint="#3BFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textUserName" />
 
@@ -164,6 +167,7 @@
         android:shadowColor="@color/white"
         android:text="@string/passwordText"
 
+        android:textColor="@color/white"
         android:textColorHint="#3BFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPassword" />
