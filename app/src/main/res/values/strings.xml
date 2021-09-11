@@ -25,4 +25,16 @@
     <string name="btnSymptoms">SYMPTOMS</string>
     <string name="btnLocations">LOCATIONS</string>
     <string name="btnBookAppointment">BOOK APPOINTMENT</string>
+    <string name="ProfileText"><u> My Profile </u></string>
+    <string name="ProfileImg">Img</string>
+    <string name="AddFile">ADD A FILE HERE</string>
+    <string name="ClickToUpLoad">CLICK ON THE ICON BELOW TO ADD YOUR FILE</string>
+    <string name="UploadImg">Upload Image</string>
+    <string name="EnterFirstName">First Name:</string>
+    <string name="EnterLastName">Last Name:</string>
+    <string name="EnterUserName">User Name:</string>
+    <string name="SettingsIcon">SettingsIcon</string>
+    <string name="SettingUsersName">User Name:</string>
+    <string name="SettingsPassword">Password:</string>
+
 </resources>
