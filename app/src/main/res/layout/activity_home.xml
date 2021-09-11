@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black">
+    android:background="@android:color/black"
+    tools:context=".Home">
 
     <TextView
         android:id="@+id/team3"
@@ -18,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/topLogo4"
+        android:id="@+id/topLogo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -33,11 +34,9 @@
     <ScrollView
         android:layout_width="409dp"
         android:layout_height="725dp"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topLogo4"
-        tools:ignore="SpeakableTextPresentCheck">
+        app:layout_constraintTop_toBottomOf="@+id/topLogo3"
+        tools:layout_editor_absoluteX="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,5 +80,4 @@
                 app:srcCompat="@drawable/settings_button" />
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
