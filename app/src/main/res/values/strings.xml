@@ -25,4 +25,10 @@
     <string name="btnSymptoms"></string>
     <string name="btnLocations"></string>
     <string name="btnBookAppointment"></string>
+    <string name ="imageFeelingSick">Feeling Sick</string>
+    <string name="txtFeelingSick">FEELING SICK?</string>
+    <string name="txtSickDesc">Click the button below to take a quick
+    preliminary exam before speaking with one of our specialists</string>
+    <string name="btnBegin"></string>
+
 </resources>

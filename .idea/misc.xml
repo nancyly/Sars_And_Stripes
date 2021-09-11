@@ -11,9 +11,10 @@
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/drawable/ic_launcher_background.xml" value="0.29791666666666666" />
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_home.xml" value="0.24444444444444444" />
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_profile.xml" value="0.134375" />
+        <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_sign_up.xml" value="0.18784722222222222" />
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_splash_screen.xml" value="0.22301912568306012" />
+        <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_symptoms.xml" value="0.134375" />
       </map>
     </option>
   </component>
