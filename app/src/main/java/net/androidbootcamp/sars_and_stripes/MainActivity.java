@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void signIn(View V)
     {
         final Dialog dialog = new Dialog(MainActivity.this);
-        dialog.setContentView(R.layout.activity_main);
+        dialog.setContentView(R.layout.activity_home);
         dialog.setTitle("UserInfo");
 
 // get the References of views
