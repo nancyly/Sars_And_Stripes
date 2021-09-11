@@ -44,37 +44,37 @@
             android:orientation="vertical" >
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/btnLabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/labs_button" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/btnSymptoms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/symptoms_button" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/btnBookAppointment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/book_appointment_black_button" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/btnLocations"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/locations_button" />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/btnProfile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/profile_button" />
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/btnSettings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/settings_button" />
