@@ -1,4 +1,3 @@
-
 <resources>
     <string name="app_name">Sars_And_Stripes</string>
     <string name="topLogo">Sars &amp; Stripes</string>
@@ -20,11 +19,23 @@
     <string name="passwordHint">Enter Password Here</string>
     <string name="userHint">Enter Username Here</string>
     <string name="rePasswordHint">Re-Enter Password Here</string>
-    <string name="btnProfile"></string>
-    <string name="btnLabs"></string>
-    <string name="btnSettings"></string>
-    <string name="btnSymptoms"></string>
-    <string name="btnLocations"></string>
-    <string name="btnBookAppointment"></string>
+    <string name="btnProfile">PROFILE</string>
+    <string name="btnLabs">LABS</string>
+    <string name="btnSettings">SETTINGS</string>
+    <string name="btnSymptoms">SYMPTOMS</string>
+    <string name="btnLocations">LOCATIONS</string>
+    <string name="btnBookAppointment">BOOK APPOINTMENT</string>
+    <string name="ProfileText"><u> My Profile </u></string>
+    <string name="ProfileImg">Img</string>
+    <string name="AddFile">ADD A FILE HERE</string>
+    <string name="ClickToUpLoad">CLICK ON THE ICON BELOW TO ADD YOUR FILE</string>
+    <string name="UploadImg">Upload Image</string>
+    <string name="EnterFirstName">First Name:</string>
+    <string name="EnterLastName">Last Name:</string>
+    <string name="EnterUserName">User Name:</string>
+    <string name="SettingsIcon">SettingsIcon</string>
+    <string name="SettingUsersName">User Name:</string>
+    <string name="SettingsPassword">Password:</string>
     <string name="title_activity_locations">Locations</string>
+
 </resources>
