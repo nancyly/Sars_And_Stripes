@@ -14,11 +14,17 @@
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_sign_up.xml" value="0.18784722222222222" />
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_splash_screen.xml" value="0.22301912568306012" />
+<<<<<<< HEAD
         <entry key="..\:/Sars_And_Stripes/app/src/main/res/layout/activity_symptoms.xml" value="0.134375" />
+=======
+        <entry key="app/src/main/res/layout/activity_labs.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.21923076923076923" />
+>>>>>>> 2aa48217b73e40aee636bbe4480d3c170a372414
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

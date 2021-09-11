@@ -19,6 +19,7 @@
     <string name="passwordHint">Enter Password Here</string>
     <string name="userHint">Enter Username Here</string>
     <string name="rePasswordHint">Re-Enter Password Here</string>
+<<<<<<< HEAD
     <string name="btnProfile"></string>
     <string name="btnLabs"></string>
     <string name="btnSettings"></string>
@@ -30,5 +31,24 @@
     <string name="txtSickDesc">Click the button below to take a quick
     preliminary exam before speaking with one of our specialists</string>
     <string name="btnBegin"></string>
+=======
+    <string name="btnProfile">PROFILE</string>
+    <string name="btnLabs">LABS</string>
+    <string name="btnSettings">SETTINGS</string>
+    <string name="btnSymptoms">SYMPTOMS</string>
+    <string name="btnLocations">LOCATIONS</string>
+    <string name="btnBookAppointment">BOOK APPOINTMENT</string>
+    <string name="ProfileText"><u> My Profile </u></string>
+    <string name="ProfileImg">Img</string>
+    <string name="AddFile">ADD A FILE HERE</string>
+    <string name="ClickToUpLoad">CLICK ON THE ICON BELOW TO ADD YOUR FILE</string>
+    <string name="UploadImg">Upload Image</string>
+    <string name="EnterFirstName">First Name:</string>
+    <string name="EnterLastName">Last Name:</string>
+    <string name="EnterUserName">User Name:</string>
+    <string name="SettingsIcon">SettingsIcon</string>
+    <string name="SettingUsersName">User Name:</string>
+    <string name="SettingsPassword">Password:</string>
+>>>>>>> 2aa48217b73e40aee636bbe4480d3c170a372414
 
 </resources>
