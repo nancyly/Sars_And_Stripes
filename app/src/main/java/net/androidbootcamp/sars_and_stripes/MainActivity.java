@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnCreate;
-    Button BtnLogin;
+
     LoginDataBaseAdapter loginDataBaseAdapter;
 
     @Override
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnCreate = (Button) findViewById(R.id.btnCreate);
-        BtnLogin = (Button) findViewById(R.id.BtnLogin);
+
 
         btnCreate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -38,16 +38,16 @@ public class MainActivity extends AppCompatActivity {
     {
         final Dialog dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.activity_main);
-        dialog.setTitle("Login");
+        dialog.setTitle("UserInfo");
 
 // get the References of views
         final EditText userNameText=(EditText)dialog.findViewById(R.id.userNameText);
         final EditText passwordText=(EditText)dialog.findViewById(R.id.passwordText);
 
-        Button btnSignIn=(Button)dialog.findViewById(R.id.BtnLogin);
+        Button BtnLogin=(Button)dialog.findViewById(R.id.BtnLogin);
 
 // Set On ClickListener
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
+        BtnLogin.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
 // get The User name and Password
