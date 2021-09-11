@@ -19,4 +19,10 @@
     <string name ="passwordHint">Enter Password Here</string>
     <string name ="userHint">Enter Username Here</string>
     <string name ="rePasswordHint">Re-Enter Password Here</string>
+    <string name="btnProfile">PROFILE</string>
+    <string name="btnLabs">LABS</string>
+    <string name="btnSettings">SETTINGS</string>
+    <string name="btnSymptoms">SYMPTOMS</string>
+    <string name="btnLocations">LOCATIONS</string>
+    <string name="btnBookAppointment">BOOK APPOINTMENT</string>
 </resources>
