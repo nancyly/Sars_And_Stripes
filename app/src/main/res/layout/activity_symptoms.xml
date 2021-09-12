@@ -34,6 +34,7 @@
     <ScrollView
         android:layout_width="409dp"
         android:layout_height="725dp"
+        tools:ignore="SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="62dp">
 
