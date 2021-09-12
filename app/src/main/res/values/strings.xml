@@ -19,19 +19,12 @@
     <string name="passwordHint">Enter Password Here</string>
     <string name="userHint">Enter Username Here</string>
     <string name="rePasswordHint">Re-Enter Password Here</string>
-<<<<<<< HEAD
-    <string name="btnProfile"></string>
-    <string name="btnLabs"></string>
-    <string name="btnSettings"></string>
-    <string name="btnSymptoms"></string>
-    <string name="btnLocations"></string>
-    <string name="btnBookAppointment"></string>
+
     <string name ="imageFeelingSick">Feeling Sick</string>
     <string name="txtFeelingSick">FEELING SICK?</string>
     <string name="txtSickDesc">Click the button below to take a quick
     preliminary exam before speaking with one of our specialists</string>
     <string name="btnBegin"></string>
-=======
     <string name="btnProfile">PROFILE</string>
     <string name="btnLabs">LABS</string>
     <string name="btnSettings">SETTINGS</string>
@@ -49,6 +42,6 @@
     <string name="SettingsIcon">SettingsIcon</string>
     <string name="SettingUsersName">User Name:</string>
     <string name="SettingsPassword">Password:</string>
->>>>>>> 2aa48217b73e40aee636bbe4480d3c170a372414
+
 
 </resources>
