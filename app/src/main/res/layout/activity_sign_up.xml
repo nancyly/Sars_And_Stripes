@@ -12,20 +12,18 @@
         android:id="@+id/textUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
         android:layout_marginTop="58dp"
         android:layout_marginEnd="13dp"
         android:backgroundTint="#2196F3"
         android:ems="10"
-        android:hint="@string/userHint"
 
+        android:hint="@string/userHint"
         android:inputType="text"
         android:shadowColor="@color/white"
         android:text="@string/userNameText"
         android:textColor="@color/white"
         android:textColorHint="#3BFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lblUname"
         app:layout_constraintTop_toBottomOf="@+id/signUp"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
@@ -71,11 +69,13 @@
         android:id="@+id/lblPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="17dp"
         android:layout_marginTop="48dp"
+        android:layout_marginEnd="7dp"
         android:text="@string/enterPasswordPrompt"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblUname" />
 
@@ -83,11 +83,13 @@
         android:id="@+id/lblUname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="7dp"
         android:text="@string/enterUsernamePrompt"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/textUserName"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signUp" />
 
@@ -95,11 +97,13 @@
         android:id="@+id/lblRePassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
         android:text="@string/rePassword"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textRePassword"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblPassword" />
 
@@ -109,9 +113,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="48dp"
+        android:layout_marginEnd="5dp"
         android:text="@string/eMail"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/textEmail"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblRePassword" />
 
