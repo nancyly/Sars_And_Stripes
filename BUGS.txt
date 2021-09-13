@@ -2,4 +2,5 @@ BUGS REPORTED / FOUND
 ----------------------
 List the known bugs below:
 ----------------------
-
+1. username and password validation - not working currently. no checks implemented will goback to it later
+2. 
