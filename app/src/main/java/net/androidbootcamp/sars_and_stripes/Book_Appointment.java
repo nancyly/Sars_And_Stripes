@@ -85,7 +85,7 @@ public class Book_Appointment extends AppCompatActivity implements CalendarAdapt
 
 
     public void book_Appointment(View view) {
-        startActivity(new Intent(this, EventEditActivity.class));
+        startActivity(new Intent(this, EventEditActivity1.class));
     }
 }
 
