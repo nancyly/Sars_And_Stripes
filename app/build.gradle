@@ -26,9 +26,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+<<<<<<< HEAD
     buildFeatures {
         viewBinding true
     }
+=======
+    compileSdkVersion 30
+>>>>>>> 26869e24fe986481cb1000b0b7ec5a5d4bf53729
 }
 
 dependencies {

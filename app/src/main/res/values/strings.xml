@@ -19,6 +19,10 @@
     <string name="passwordHint">Enter Password Here</string>
     <string name="userHint">Enter Username Here</string>
     <string name="rePasswordHint">Re-Enter Password Here</string>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 26869e24fe986481cb1000b0b7ec5a5d4bf53729
     <string name="imageFeelingSick">Feeling Sick</string>
     <string name="txtFeelingSick">FEELING SICK?</string>
     <string name="txtSickDesc">Click the button below to take a quick
@@ -41,10 +45,17 @@
     <string name="SettingsIcon">SettingsIcon</string>
     <string name="SettingUsersName">User Name:</string>
     <string name="SettingsPassword">Password:</string>
+<<<<<<< HEAD
     <string name="title_activity_locations">Locations</string>
     <string name="locations"><u>Locations</u></string>
     <string name="locationDesc">Below, you can find multiple COVID testing facilities in the VA Beach area. Click on a pin to find directions.</string>
     <string name="labsImage"></string>
+=======
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="weekly">Weekly</string>
+    <string name="toggle_weekly">Toggle weekly</string>
+>>>>>>> 26869e24fe986481cb1000b0b7ec5a5d4bf53729
 
 
 </resources>
