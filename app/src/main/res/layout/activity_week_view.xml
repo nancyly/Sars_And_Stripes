@@ -12,18 +12,27 @@
 
     <TextView
         android:id="@+id/monthYearTV"
+        layout_constraintBottom_toTopOf="@+id/button11"
+        layout_constraintEnd_toEndOf="@+id/textView36"
+        layout_constraintHorizontal_bias="0.5"
+        layout_constraintStart_toEndOf="@+id/textView36"
+        layout_constraintStart_toStartOf="parent"
+        layout_constraintTop_toTopOf="@+id/eventListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Feb 2021"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="43dp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button11"
+        layout_constraintBaseline_toBaselineOf="@+id/button12"
+        layout_constraintBottom_toTopOf="@+id/textView32"
+        layout_constraintEnd_toEndOf="@+id/button12"
+        layout_constraintEnd_toStartOf="@+id/button12"
         layout_constraintStart_toStartOf="parent"
+        layout_constraintTop_toBottomOf="@+id/monthYearTV"
         layout_constraintTop_toTopOf="parent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -36,6 +45,11 @@
 
     <Button
         android:id="@+id/button12"
+        layout_constraintBottom_toTopOf="@+id/textView38"
+        layout_constraintEnd_toEndOf="parent"
+        layout_constraintStart_toEndOf="@+id/button11"
+        layout_constraintStart_toStartOf="parent"
+        layout_constraintTop_toTopOf="@+id/monthYearTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -43,96 +57,130 @@
         android:text="@string/forward"
         android:textColor="@color/purple_200"
         android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="34dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView32"
-        android:layout_width="57dp"
+        layout_constraintBaseline_toBaselineOf="@+id/textView33"
+        layout_constraintBottom_toTopOf="@+id/calendarRecyclerView"
+        layout_constraintEnd_toEndOf="@+id/textView35"
+        layout_constraintEnd_toStartOf="@+id/textView33"
+        layout_constraintStart_toStartOf="parent"
+        layout_constraintTop_toBottomOf="@+id/button11"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="SUN"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="97dp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView33"
-        android:layout_width="58dp"
+        layout_constraintBaseline_toBaselineOf="@+id/textView32"
+        layout_constraintEnd_toEndOf="@+id/textView36"
+        layout_constraintEnd_toStartOf="@+id/textView34"
+        layout_constraintStart_toEndOf="@+id/textView32"
+        layout_constraintStart_toStartOf="parent"
+        layout_constraintTop_toTopOf="@+id/monthYearTV"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="MON"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="97dp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView34"
-        android:layout_width="57dp"
+        layout_constraintBaseline_toBaselineOf="@+id/textView32"
+        layout_constraintBottom_toTopOf="@+id/textView36"
+        layout_constraintEnd_toEndOf="@+id/textView38"
+        layout_constraintEnd_toStartOf="@+id/textView35"
+        layout_constraintStart_toEndOf="@+id/textView33"
+        layout_constraintStart_toStartOf="parent"
+        layout_constraintTop_toBottomOf="@+id/textView38"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="TUE"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="97dp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView35"
-        android:layout_width="58dp"
+        layout_constraintBaseline_toBaselineOf="@+id/textView32"
+        layout_constraintEnd_toEndOf="@+id/textView33"
+        layout_constraintEnd_toStartOf="@+id/textView36"
+        layout_constraintStart_toEndOf="@+id/textView34"
+        layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="WED"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="97dp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="57dp"
+        layout_constraintBaseline_toBaselineOf="@+id/textView32"
+        layout_constraintBottom_toTopOf="@+id/calendarRecyclerView"
+        layout_constraintEnd_toStartOf="@+id/textView37"
+        layout_constraintStart_toEndOf="@+id/textView35"
+        layout_constraintStart_toStartOf="@+id/button11"
+        layout_constraintTop_toBottomOf="@+id/textView34"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="THUR"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="97dp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView37"
-        android:layout_width="58dp"
+        layout_constraintBaseline_toBaselineOf="@+id/textView32"
+        layout_constraintEnd_toEndOf="@+id/textView34"
+        layout_constraintEnd_toStartOf="@+id/textView38"
+        layout_constraintStart_toEndOf="@+id/textView36"
+        layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="FRI"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="97dp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView38"
-        android:layout_width="58dp"
+        layout_constraintBaseline_toBaselineOf="@+id/textView32"
+        layout_constraintBottom_toTopOf="@+id/textView34"
+        layout_constraintEnd_toEndOf="@+id/textView32"
+        layout_constraintStart_toEndOf="@+id/textView37"
+        layout_constraintStart_toStartOf="parent"
+        layout_constraintTop_toBottomOf="@+id/button12"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="SAT"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="352dp"
-        tools:layout_editor_absoluteY="97dp" />
+        android:textSize="16sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/calendarRecyclerView"
+        layout_constraintBottom_toBottomOf="parent"
+        layout_constraintStart_toStartOf="@+id/monthYearTV"
+        layout_constraintTop_toBottomOf="@+id/button13"
+        layout_constraintTop_toTopOf="@+id/monthYearTV"
         android:layout_width="412dp"
-        android:layout_height="88dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="119dp" />
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="642dp" />
 
     <Button
         android:id="@+id/button13"
+        layout_constraintBaseline_toBaselineOf="@+id/button11"
+        layout_constraintBottom_toTopOf="@+id/eventListView"
+        layout_constraintEnd_toStartOf="@+id/textView38"
+        layout_constraintStart_toStartOf="@+id/monthYearTV"
+        layout_constraintTop_toBottomOf="@+id/calendarRecyclerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -141,15 +189,18 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="219dp" />
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="136dp" />
 
     <ListView
         android:id="@+id/eventListView"
+        layout_constraintBottom_toBottomOf="parent"
+        layout_constraintBottom_toTopOf="parent"
+        layout_constraintStart_toStartOf="@+id/monthYearTV"
+        layout_constraintTop_toBottomOf="@+id/button13"
+        layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="498dp" />
+        android:layout_height="wrap_content" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
