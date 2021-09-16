@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sars_And_Stripes">
         <activity
+            android:name=".WeekViewActivity1"
+            android:exported="true" />
+        <activity
             android:name=".EventEditActivity1"
             android:exported="true" />
         <activity
