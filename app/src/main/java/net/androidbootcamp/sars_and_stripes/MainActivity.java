@@ -22,18 +22,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnCreate = (Button) findViewById(R.id.btnCreate);
+        btnCreate = findViewById(R.id.btnCreate);
 
 
         btnCreate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Intent intentSignUP=new Intent(getApplicationContext(),SignUp.class);
+                Intent intentSignUP = new Intent(getApplicationContext(), SignUp.class);
                 startActivity(intentSignUP);
 
             }
         });
-        BtnLogin = (Button) findViewById(R.id.BtnLogin);
+        BtnLogin = findViewById(R.id.BtnLogin);
         BtnLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -42,8 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
     }
-    public void signIn(View V)
+}
+  /*
+   public void signIn(View V)
     {
         final Dialog dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.activity_main);
@@ -98,3 +101,6 @@ public class MainActivity extends AppCompatActivity {
         loginDataBaseAdapter.close();
     }
 }
+
+
+   */
