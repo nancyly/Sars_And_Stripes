@@ -14,7 +14,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import net.androidbootcamp.sars_and_stripes.databinding.ActivityLocationsBinding;
 
 public class Locations extends FragmentActivity implements OnMapReadyCallback {
-
+//>>>>>>>>>>>>!!! LOG INTO YOUR STUPID ANDROID STUDIOS WITH YOUR GOOGLE ACCOUNT!!!! <<<<<<<<<<<<<<
     private GoogleMap mMap;
     private ActivityLocationsBinding binding;
 
