@@ -44,6 +44,7 @@
     <string name="title_activity_locations">Locations</string>
     <string name="locations"><u>Locations</u></string>
     <string name="locationDesc">Below, you can find multiple COVID testing facilities in the VA Beach area. Click on a pin to find directions.</string>
+    <string name="labsImage"></string>
 
 
 </resources>
