@@ -24,6 +24,7 @@
         android:id="@+id/eventNameET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:foregroundTint="@color/design_default_color_background"
         android:inputType="text"
