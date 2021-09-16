@@ -33,6 +33,12 @@
             android:label="@string/title_activity_locations"
         />
         <activity
+            android:name=".WeekViewActivity1"
+            android:exported="true" />
+        <activity
+            android:name=".EventEditActivity1"
+            android:exported="true" />
+        <activity
             android:name=".Settings"
             android:exported="true" />
         <activity

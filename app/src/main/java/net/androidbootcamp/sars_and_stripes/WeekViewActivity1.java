@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import static net.androidbootcamp.sars_and_stripes.CalendarUtils.daysInWeekArray;
 import static net.androidbootcamp.sars_and_stripes.CalendarUtils.monthYearFromDate;
 
-public class WeekViewActivity extends AppCompatActivity implements CalendarAdapter.OnItemListener
+public class WeekViewActivity1 extends AppCompatActivity implements CalendarAdapter.OnItemListener
 {
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
@@ -31,7 +31,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_week_view);
+        setContentView(R.layout.activity_week_view1);
         initWidgets();
         setWeekView();
     }
@@ -95,6 +95,6 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
 
     public void newEventAction(View view)
     {
-        startActivity(new Intent(this, EventEditActivity.class));
+        startActivity(new Intent(this, EventEditActivity1.class));
     }
 }

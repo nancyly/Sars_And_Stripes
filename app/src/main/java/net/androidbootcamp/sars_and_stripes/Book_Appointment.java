@@ -79,13 +79,13 @@ public class Book_Appointment extends AppCompatActivity implements CalendarAdapt
 
     public void weeklyAction(View view)
     {
-        startActivity(new Intent(this, WeekViewActivity.class));
+        startActivity(new Intent(this, WeekViewActivity1.class));
     }
 
 
 
     public void book_Appointment(View view) {
-        startActivity(new Intent(this, EventEditActivity.class));
+        startActivity(new Intent(this, EventEditActivity1.class));
     }
 }
 

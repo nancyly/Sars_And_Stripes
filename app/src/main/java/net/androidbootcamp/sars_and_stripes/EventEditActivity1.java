@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.time.LocalTime;
 
-public class EventEditActivity extends AppCompatActivity
+public class EventEditActivity1 extends AppCompatActivity
 {
     private EditText eventNameET;
     private TextView eventDateTV, eventTimeTV;
@@ -23,7 +23,7 @@ public class EventEditActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_edit);
+        setContentView(R.layout.activity_event_edit1);
         initWidgets();
         time = LocalTime.now();
         eventDateTV.setText("Date: " + CalendarUtils.formattedDate(CalendarUtils.selectedDate));
