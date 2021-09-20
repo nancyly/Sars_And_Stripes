@@ -6,13 +6,27 @@ public class UserInfo {
     private String passWord;
     private String email;
 
-    public UserInfo() {}
+    //constructors
     public UserInfo(int userId, String userName, String passWord, String email) {
         this.userName = userName;
         this.passWord = passWord;
         this.email = email;
         this.userId = userId;
     }
+    public UserInfo() {}
+
+    // toString function to convert over to text for output to our app
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", passWord='" + passWord + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
+    //getters and setters
     public void setUserId (int userId){
         this.userId = userId;
     }
@@ -20,7 +34,7 @@ public class UserInfo {
         return this.userId;
     }
 
-    public void setUserName(String uName) {
+    public void setUserName(String userName) {
         this.userName = userName;
     }
     public String getUserName() {
