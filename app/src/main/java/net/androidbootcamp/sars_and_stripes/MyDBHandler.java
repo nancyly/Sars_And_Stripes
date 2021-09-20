@@ -78,7 +78,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
         }
     }
 
-    // Search from users database - returns boolean value true (if exists) or false (if does not exist)
+    // SEARCH FROM USERS DATABASE USERNAME & PASSWORD - returns boolean value true (if exists) or false (if does not exist)
     public boolean doesUserExist(String userName, String passWord){
         SQLiteDatabase db = this.getReadableDatabase();
         String mQuery ="SELECT " + "*" + " FROM " + USERINFO_TABLE + " WHERE " + COLUMN_USER_NAME
@@ -92,6 +92,21 @@ public class MyDBHandler extends SQLiteOpenHelper {
             return false;
         }
 
+    }
+
+    // USED TO PULL ONLY USERNAME FROM DATABASE FOR SIGNUP CHECK - returns boolean value true (if exists) or false (if does not exist)
+    public boolean doesUsernameExist(String userName){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String mQuery ="SELECT " + "*" + " FROM " + USERINFO_TABLE + " WHERE " + COLUMN_USER_NAME
+                + " = " + "'" + userName + "'";
+
+        Cursor cursor = db.rawQuery(mQuery, null);
+        if(cursor.moveToFirst()){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 

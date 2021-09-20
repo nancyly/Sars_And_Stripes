@@ -14,6 +14,8 @@ public class SignUp extends AppCompatActivity {
     // References to all the buttons on SIGNUP page
     Button btnAcctCreate;
     EditText textUserName, textPassword, textRePassword, textEmail;
+    // define the userAccount
+    UserInfo userInfo;
 
 
     @Override
@@ -67,23 +69,33 @@ public class SignUp extends AppCompatActivity {
                 }
                 // =================================================================================
 
-                // define the userAccount
-                UserInfo userInfo;
-                // Attempt to pass the new user values to a new UserInfo class
-                try {
-                    userInfo = new UserInfo(-1, userName, password, eMail);
-                    Toast.makeText(getApplicationContext(), "Account Successfully Created ", Toast.LENGTH_LONG).show();
-                    startActivity(new Intent(SignUp.this, Home.class));     //take user to homeUI
-                }
-                catch (Exception e) {
-                    Toast.makeText(getApplicationContext(), "User Account could not be created", Toast.LENGTH_LONG).show();
-                    userInfo = new UserInfo(-1, "error-username", "error-password", "error-email");
-                }
                 // reference database to these users' value from SignUp page
                 MyDBHandler myDBHandler = new MyDBHandler(SignUp.this);
 
-                // call the database method addRow() and add new user
-                myDBHandler.addRow(userInfo);
+                // ADD A TRY CATCH BELOW TO VERIFY IF USER EXISTS PRIOR TO CREATING
+                try{
+                    if(myDBHandler.doesUsernameExist(userName)){
+                        Toast.makeText(getApplicationContext(), "Username taken", Toast.LENGTH_LONG).show();
+                    }
+                    else{
+                        // Attempt to pass the new user values to a new UserInfo class
+                        try {
+                            userInfo = new UserInfo(-1, userName, password, eMail);
+                            Toast.makeText(getApplicationContext(), "Account Successfully Created ", Toast.LENGTH_LONG).show();
+                            startActivity(new Intent(SignUp.this, Home.class));     //take user to homeUI
+                        }
+                        catch (Exception e) {
+                            Toast.makeText(getApplicationContext(), "User Account could not be created", Toast.LENGTH_LONG).show();
+                            userInfo = new UserInfo(-1, "error-username", "error-password", "error-email");
+                        }
+                        // call the database method addRow() and add new user
+                        myDBHandler.addRow(userInfo);
+                    }
+                }
+                catch (Exception e){
+                    Toast.makeText(getApplicationContext(), "Username taken", Toast.LENGTH_LONG).show();
+                }
+
             }
         }); //end of buttonAccountCreate-onClick
     } //end of onCreate
