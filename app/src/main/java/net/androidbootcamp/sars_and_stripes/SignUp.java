@@ -61,7 +61,7 @@ public class SignUp extends AppCompatActivity {
 
                 // ============= need to go back and fix the checks below =======================
                 // verify user email has @something.com - NOT CASE SENSITIVE - due to time i did basic check
-                else if(eMail.contains("@") == false) {
+                else if(!eMail.contains("@")) {
                     Toast.makeText(getApplicationContext(), "Email not valid", Toast.LENGTH_LONG).show();
                     return;
                 }
@@ -90,7 +90,6 @@ public class SignUp extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-    // TODO Auto-generated method stub
         super.onDestroy();
         MyDBHandler myDBHandler = new MyDBHandler(SignUp.this);
         myDBHandler.close();

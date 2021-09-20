@@ -1,10 +1,22 @@
 package net.androidbootcamp.sars_and_stripes;
 
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
 import android.content.ContentValues;
+import android.widget.Toast;
+
 import androidx.annotation.Nullable;
+
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+
+/* IF YOU NEED TO SEE WHAT THE DATABASE LOOKS LIKE ON THE EMULATOR GO TO:
+*   'View' > 'Tools Windows' > 'Device File Explorer' > 'data' > 'data' >
+*       net.androidbootcamp.sars_and_stripes > 'databases' > 'userinfo.db'
+********************************************************************************/
 
 // the actual Database to store userInfo
 public class MyDBHandler extends SQLiteOpenHelper {
@@ -48,7 +60,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
     //    onCreate(_db);
     }
 
-    // Add new user to the database
+    // Add new user to users database
     public boolean addRow(UserInfo newUser) {
         SQLiteDatabase db = this.getWritableDatabase(); // get a writeable database
         ContentValues cv = new ContentValues();         // hash map - value pairs
@@ -65,5 +77,27 @@ public class MyDBHandler extends SQLiteOpenHelper {
             return true;
         }
     }
+
+    // Search from users database - returns boolean value true (if exists) or false (if does not exist)
+    public boolean doesUserExist(String userName, String passWord){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String mQuery ="SELECT " + "*" + " FROM " + USERINFO_TABLE + " WHERE " + COLUMN_USER_NAME
+                + " = " + "'" + userName + "'" + " AND " + COLUMN_USER_PASSWORD + " = " +  "'" + passWord + "'";
+
+        Cursor cursor = db.rawQuery(mQuery, null);
+        if(cursor.moveToFirst()){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
+
+
+
+    // Update from users database
+
+    // delete entry from database
 }
 
