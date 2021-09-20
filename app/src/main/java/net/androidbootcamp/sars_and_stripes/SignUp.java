@@ -11,11 +11,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SignUp extends AppCompatActivity {
-    private EditText textUserName, textPassword, textRePassword, textEmail;
-    private Button btnAcctCreate;
-    LoginDataBaseAdapter loginDataBaseAdapter;
+import java.util.Locale;
 
+public class SignUp extends AppCompatActivity {
+    // References to all the buttons on SIGNUP page
+    Button btnAcctCreate;
+    EditText textUserName, textPassword, textRePassword, textEmail;
+    LoginDataBaseAdapter loginDataBaseAdapter;
 
 
     @Override
@@ -23,53 +25,75 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        // point the referenced buttons to each field
         textUserName = (EditText) findViewById(R.id.textUserName);
         textPassword = (EditText) findViewById(R.id.textPassword);
         textRePassword = (EditText) findViewById(R.id.textRePassword);
         textEmail = (EditText) findViewById(R.id.textEmail);
         btnAcctCreate = (Button) findViewById(R.id.btnAcctCreate);
 
-
-
+        // click listener implemented
         btnAcctCreate.setOnClickListener(new View.OnClickListener() {
-
+            @Override
             public void onClick(View v) {
-// TODO Auto-generated method stub
-
-                String userName=textUserName.getText().toString();
+                String userName=textUserName.getText().toString().toLowerCase();
                 String password=textPassword.getText().toString();
                 String confirmPassword=textRePassword.getText().toString();
-                String eMail=textEmail.getText().toString();
+                String eMail=textEmail.getText().toString().toLowerCase();
 
-// check if any of the fields are vacant
-                if(userName.equals("")||password.equals("")||confirmPassword.equals(""))
+        // use TRY CATCH instead for each section. go back to this later
+        // check if username field is vacant - NOT CASE SENSITIVE
+                if(userName.equals(""))
                 {
-                    Toast.makeText(getApplicationContext(), "Field Vacant", Toast.LENGTH_LONG).show();
-
+                    Toast.makeText(getApplicationContext(), "Username field vacant", Toast.LENGTH_LONG).show();
                     return;
                 }
-// check if both password matches
-                if(!password.equals(confirmPassword))
+        // check if initial password is vacant
+                else if(password.equals("")){
+                    Toast.makeText(getApplicationContext(), "Password field vacant", Toast.LENGTH_LONG).show();
+                    return;
+                    //||confirmPassword.equals("")
+                }
+        // check if both password matches
+                else if(!password.equals(confirmPassword))
                 {
                     Toast.makeText(getApplicationContext(), "Password does not match", Toast.LENGTH_LONG).show();
                     return;
                 }
+        // check if email field is vacant
+                else if(eMail.equals("")){
+                    Toast.makeText(getApplicationContext(), "Email field vacant", Toast.LENGTH_LONG).show();
+                    return;
+                }
+        // verify user email has @something.com - NOT CASE SENSITIVE
+        // need to go back and fix this part
+
+                else if(eMail.contains("@") == false){
+                    Toast.makeText(getApplicationContext(), "Email not valid", Toast.LENGTH_LONG).show();
+                    return;
+                }
                 else
                 {
-// Save the Data in Database
-                    loginDataBaseAdapter.insertEntry(userName, password, eMail);
+        // Save the Data in Database
+                    // Create a new instance of the userInfo class
+                    UserInfo userInfo = new UserInfo(-1, userName, password, eMail);
+                    //loginDataBaseAdapter.insertEntry(userName, password, eMail);
                     Toast.makeText(getApplicationContext(), "Account Successfully Created ", Toast.LENGTH_LONG).show();
+                    // go to homeUI
+                    setContentView(R.layout.activity_home);
                 }
             }
         });
-    }
+    } //end of onCreate
+
     @Override
     protected void onDestroy() {
-// TODO Auto-generated method stub
+    // TODO Auto-generated method stub
         super.onDestroy();
 
         loginDataBaseAdapter.close();
     }
+
 }
 
 
