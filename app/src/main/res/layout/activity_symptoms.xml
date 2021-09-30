@@ -35,15 +35,13 @@
     <ScrollView
         android:layout_width="409dp"
         android:layout_height="725dp"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="62dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topLogo5" >
+        app:layout_constraintTop_toBottomOf="@+id/topLogo5">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,6 +83,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/black"
                 android:contentDescription="@string/btnBegin"
+                android:onClick="enter_symptoms"
                 app:srcCompat="@drawable/begin_exam_button"
                 tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
         </LinearLayout>

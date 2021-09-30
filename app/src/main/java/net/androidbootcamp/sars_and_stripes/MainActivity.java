@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     // Calls the database function to see if user is in Users' database
                     if(myDBHandler.doesUserExist(userName, password)){
                         Toast.makeText(getApplicationContext(), "Login Successful ", Toast.LENGTH_LONG).show();
+                        Profile.setUserName(userName); //pass the username to the new profile display
                         startActivity(new Intent(MainActivity.this, Home.class));
                     }
                     else{

@@ -5,13 +5,23 @@ public class UserInfo {
     private String userName;
     private String passWord;
     private String email;
+    private String firstName;
+    private String lastName;
+    private String phoneNumber;
+    private String address;
 
     //constructors
-    public UserInfo(int userId, String userName, String passWord, String email) {
+    public UserInfo(int userId, String userName, String passWord, String firstName, String lastName,
+                    String address, String phoneNumber, String email) {
+        this.userId = userId;
         this.userName = userName;
         this.passWord = passWord;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
         this.email = email;
-        this.userId = userId;
+
     }
     public UserInfo() {}
 
@@ -22,6 +32,10 @@ public class UserInfo {
                 "userId=" + userId +
                 ", userName='" + userName + '\'' +
                 ", passWord='" + passWord + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
@@ -36,6 +50,7 @@ public class UserInfo {
 
     public void setUserName(String userName) {
         this.userName = userName;
+
     }
     public String getUserName() {
         return this.userName;
@@ -54,4 +69,33 @@ public class UserInfo {
     public String getEmail(){
         return this.email;
     }
+
+    public void setFirstName (String firstName){
+        this.firstName = firstName;
+    }
+    public String getFirstName(){
+        return this.firstName;
+    }
+
+    public void setLastName (String lastName){
+        this.lastName = lastName;
+    }
+    public String getLastName(){
+        return this.lastName;
+    }
+
+    public void setPhoneNumber (String phoneNumber){
+        this.phoneNumber = phoneNumber;
+    }
+    public String getPhoneNumber(){
+        return this.phoneNumber;
+    }
+
+    public void setAddress (String address){
+        this.address = address;
+    }
+    public String getAddress(){
+        return this.address;
+    }
+
 }

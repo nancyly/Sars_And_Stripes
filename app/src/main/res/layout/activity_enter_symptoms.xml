@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".Enter_Symptoms">
+
+    <TextView
+        android:id="@+id/topLogo9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/topLogo"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/teamName"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="249dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLogo9"
+        app:srcCompat="@drawable/feeling_sick_icon" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="385dp"
+        android:layout_height="323dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/team9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check all boxes that are a 'Yes' :"
+                android:textAlignment="center"
+                android:textColor="#F4F4F4"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/covid_symptoms"
+                android:textColor="#F6F0F0" />
+
+            <CheckBox
+                android:id="@+id/checkbox_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms2"
+                android:textColor="#F8F6F6" />
+
+            <CheckBox
+                android:id="@+id/checkbox_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms15"
+                android:textColor="#F6F5F5" />
+
+            <CheckBox
+                android:id="@+id/checkbox_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms3"
+                android:textColor="#FAF7F7" />
+
+            <CheckBox
+                android:id="@+id/checkbox_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms4"
+                android:textColor="#FAF9F9" />
+
+            <CheckBox
+                android:id="@+id/checkbox_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms5"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkbox_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms6"
+                android:textColor="#FDFCFC" />
+
+            <CheckBox
+                android:id="@+id/checkbox_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms7"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkbox_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms8"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkbox_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms9"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkbox_eleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms10"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkbox_twelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms11"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkbox_thirteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms12"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkbox_fourteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms13"
+                android:textColor="#FBFBFB" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine" />
+
+            <CheckBox
+                android:id="@+id/checkbox_fifteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/covid_symptoms14"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/check_Results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Check_results"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
